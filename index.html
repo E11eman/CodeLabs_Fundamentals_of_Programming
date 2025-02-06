@@ -11,10 +11,10 @@
     </head>
 
     <body>
-     <h1>My Goals for the Year</h1>
-
-    <hr>
-        <nav>
+        <header>
+           <h1>My Goals for the Year</h1>
+        
+        <nav aria-label="primary-navigation">
             <ul>
                 <li>
                     <a href="#html">Learn HTML</a>
@@ -24,12 +24,16 @@
                 </li>
             </ul>
         </nav>
+    </header>
 
      <hr>
+     <main>
 
-    <section id="html">
+    <article id="html">
      <h2>I'm Ready to Learn HTML</h2>
      <p>This is my first web page.</p>
+     <section>
+        <h3>HTML5</h3>
     <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="300" height="300">
     <figure>
         <figcaption>
@@ -39,6 +43,8 @@
             <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
         </p>
     </figure>
+</section>
+<section>
      <h3>My Daily Schedule</h3>
      <p>Let me tell you how: </p>
         <ol>
@@ -47,14 +53,23 @@
             <li>...I use resources from <abbr title="Mozilla Developer Network">
                 <a href="https://developer.mozilla.org/en-US/">MDN</a></abbr>.</li>
         </ol>
+        <aside>
+            <details>
+                <summary>Guess the <mark>number of hours</mark> I code per day</summary>
+                <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H"> 3 hours</time> every morning.</p>
+            </details>
+        </aside>
     </section>
+    </article>
      <hr>
      
 
-    <section id="vacation">
+    <article id="vacation">
      <h2>I Am Also Planning a Vacation</h2>
      <p>I've been worknig hard and <em>really need a getaway</em>.</p>
      <p>I live in <abbr title="Kansas"> KS</abbr> so I want to visit a beach.</p>
+
+     <section>
 
      <h3>Places I'd like to Visit</h3>
      <ul>
@@ -85,7 +100,10 @@
             </figure>
         </li>
     </ul>
+    </section>
      <!-- TODO: Add more places -->
+      
+      <section>
      <h3>Place I want to Avoid</h3>
      <dl>
         <dt>North Pole</dt>
@@ -98,12 +116,17 @@
         <dd>These are also cold.</dd>
      </dl>
     </section>
-
+    </article>
+</main>
      <hr>
-     &lt;&lt;&lt; &copy; <a href="about.html">Luke Elleman</a> &gt;&gt;&gt;
-    <p>
-        <a href="#">Back to Top</a>
-    </p>
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Luke Elleman</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
 
     </body>
 
